@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .student-info {
+            display: flex;
+            width: 70%;
+            margin: 30px auto;
+            justify-content: space-around;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #result {
+            position: fixed;
+            background: white;
+            padding: 20px;
+            right: 20px;
+            top: 20px;
+        }
+
+        .bgGreen {
+            background: green;
+        }
+
+        .bgRed {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="test-item">
+            <fieldset><span class="test-number"></span><span class="test-question">Что обозначает приставка Java в имени
+                    JavaScript?</span>
+                <ul>
+                    <li><input type="radio" name="question1">A. Язык JavaScript и Java это одно и тоже.</li>
+                    <li><input type="radio" name="question1">B. Эта приставка указывает что это язык есть
+                        облегчённой версией языка Java.</li>
+                    <li><input type="radio" name="question1" value="true">C. Это только название, которое никак не
+                        связывает этот
+                        язык с языком Java.</li>
+                    <li><input type="radio" name="question1">D. То что эти два языка программирования выпустила
+                        одна и та же компания.</li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="test-item">
+            <fieldset><span class="test-number"></span><span class="test-question">Что такое идентификатор в
+                    JavaScript?</span>
+                <ul>
+                    <li><input type="radio" name="question2" value="true">A. Это имя переменной или функции.</li>
+                    <li><input type="radio" name="question2">B. Это тип данных - Объект</li>
+                    <li><input type="radio" name="question2"> C. Это тип данных - Функция</li>
+                    <li><input type="radio" name="question2">D. Это тип данных - Массив</li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <div class="test-item">
+            <fieldset><span class="test-number"></span><span class="test-question">Какие элементарные типы есть в
+                    JavaScript?</span>
+                <ul class="CheckBoxUl">
+                    <li><input type="checkbox" value="true">A. Number, String, Boolean</li>
+                    <li><input type="checkbox">B. Object, Boolean, String</li>
+                    <li><input type="checkbox">C. Array, null, String</li>
+                    <li><input type="checkbox" value="true">D. undefined, null, Number</li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <div class="test-item">
+            <fieldset><span class="test-number"></span><span class="test-question">Назовите три функции для работы с
+                    диалоговыми окнами?</span>
+                <ul>
+                    <li><input type="radio" name="question4">A. alert(); Console.WriteLine(); print();</li>
+                    <li><input type="radio" name="question4">B. alert(); prompt(); print();</li>
+                    <li><input type="radio" name="question4" value="true">C. alert(); prompt(); confirm();</li>
+                    <li><input type="radio" name="question4">D. select(); prompt(); print();</li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <div class="test-item">
+            <fieldset><span class="test-number"></span><span class="test-question">Язык JavaScript является?</span>
+                <ul class="CheckBoxUl">
+                    <li><input type="checkbox" value="true"> A. Прототипно-ориентированный скриптовый язык
+                        программирования.</li>
+                    <li><input type="checkbox" value="true">B. Cобытийно-ориентированный язык
+                        программирования.</li>
+                    <li><input type="checkbox">C. Процедурный язык программирования.</li>
+                    <li><input type="checkbox">D. Аспектно-ориентированый язык программирования.</li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="student-info">
+            <input type="hidden" name="mark">
+            Имя: <input type="text" id="test" name="name">
+            Фамиллия: <input type="text" name="secondName">
+            <input type="submit" id="sendBtn" value="Отправить">
+        </div>
+        <div id="result"> </div>
+    </form>
+    <script src="js/main.js">
+
+    </script>
+</body>
+
+</html>
